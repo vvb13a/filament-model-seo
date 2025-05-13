@@ -39,6 +39,6 @@ trait HasSeoCanonicalUrlSchema
             ->helperText('Leave empty to use the page\'s default URL. Ensures search engines know the primary source.')
             ->url()
             ->required($this->isSeoCanonicalUrlRequired)
-            ->placeholder($this->getRecord()->seoTest->getCanonicalUrl());
+            ->placeholder($this->getRecord()->seo->getCanonicalUrl());
     }
 }

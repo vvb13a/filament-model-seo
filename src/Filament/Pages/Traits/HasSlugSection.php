@@ -74,7 +74,7 @@ trait HasSlugSection
             )
             ->required($this->isSlugRequired)
             ->prefix(
-                str($this->getRecord()->seoTest->getCanonicalUrl())
+                str($this->getRecord()->seo->getCanonicalUrl())
                     ->replaceEnd('/', '')
                     ->beforeLast('/')
                     ->append('/')

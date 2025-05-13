@@ -38,6 +38,6 @@ trait HasSeoKeywordsSchema
             ->label('Meta Keywords')
             ->helperText('This is a largely outdated seo attribute but populates the keywords meta tag.')
             ->required($this->isSeoKeywordsRequired)
-            ->placeholder($this->getRecord()->seoTest->getKeywords());
+            ->placeholder($this->getRecord()->seo->getKeywords());
     }
 }

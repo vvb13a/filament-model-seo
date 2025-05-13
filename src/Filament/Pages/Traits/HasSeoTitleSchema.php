@@ -63,6 +63,6 @@ trait HasSeoTitleSchema
                         'attr' => 'data.seoData.title',
                     ])
             )
-            ->placeholder($this->getRecord()->seoTest->getTitle());
+            ->placeholder($this->getRecord()->seo->getTitle());
     }
 }

@@ -62,6 +62,6 @@ trait HasSeoDescriptionSchema
                     'maxLength' => $this->seoDescriptionMaxLength,
                     'attr' => 'data.seoData.description',
                 ]))
-            ->placeholder($this->getRecord()->seoTest->getDescription());
+            ->placeholder($this->getRecord()->seo->getDescription());
     }
 }
